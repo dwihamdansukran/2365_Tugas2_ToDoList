@@ -1,0 +1,106 @@
+body {
+    font-family: 'Times New Roman', Times, serif; /* Menggunakan font Times New Roman */
+    background: linear-gradient(270deg, #d11e1e, #138cfe);
+    background-size: 200% 200%; /* Ukuran latar belakang untuk animasi */
+    animation: gradientAnimation 5s ease infinite; /* Menambahkan animasi */
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.container {
+    width: 600px;
+    margin: 100px auto;
+    background: rgba(255, 255, 255, 0.8); /* Tambahkan transparansi untuk melihat latar belakang */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #070707;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a8caf;
+    color: rgb(0, 0, 0);
+    border: 1px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0011ff60;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #000000;
+}
+
+li button {
+    background-color: #ff0000;
+    border: 1px solid #180e0e;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #020202;
+}
+
+.edit-input {
+    width: 70%;
+    padding: 5px;
+    border: 1px solid #ff0000;
+    border-radius: 4px;
+}
+
+/* Animasi Mobil */
+@keyframes moveCar {
+    0% {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    50% {
+        left: 60%; /* Bergerak ke kanan */
+        transform: translateX(-50%);
+    }
+    100% {
+        left: 50%; /* Kembali ke posisi awal */
+        transform: translateX(-50%);
+    }
+}
